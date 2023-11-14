@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="imagem/imagem_proper.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/icon-dn.png" type="image/x-icon">
+    <title>Grafica DNS</title>
+</head>
+
+
+<body onload="tela()">
+
+    <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="adesivos.html">Adesivos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartoes_visitas.html">Cartões de Visitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="panfletos.html">Panfletos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="banner.html">Banners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="windbanner.html">Wind Banners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imas.html">Imãs de Geladeira</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="cabecalho">
+        <div class="logo">
+            <img src="imagem/logo_grafica_b.png" alt="logo empresa gráfica DNS">
+
+
+        </div>
+        <div id="cab-contato" class="logo">
+            <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank"><img src="imagem/icon-zao.png"
+                    alt="telefone de contato">
+                <p>27 99645-8627 / 99532-1787</p>
+            </a>
+            <div class="sublinhado">
+
+            </div>
+        </div>
+
+    </header>
+    <!--==========================================================================id="contato-zap"======================-->
+
+    <section id="fotoMarketing">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/panfletos_marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/panfletos_marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <a href="panfletos.html">
+                        <picture>
+                            <source media="(max-width:600px )" srcset="imagem/pan_2500_peq.jpg" type="image/jpg">
+                            <img src="imagem/pan_2500.jpg" class="d-block w-100" alt="...">
+                        </picture>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/dev_marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/dev_marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!--================================================================================================-->
+    </section>
+    <section>
+
+
+        <div>
+            <div id="bemVindo">
+                <div id="zap-verde">
+                    <div id="botFechar" onclick="closedForm()">X</div>
+                    <form method="get" onsubmit="abrirWhatsapp()">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                        <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar
+                                dados p/ Whatsapp</span>
+                    </form>
+
+                </div>
+                <div class="zap-verde" onclick="formulario()">
+                    <img src="imagem/logo-zap-verde.png" alt="orçamento">
+                </div>
+
+                <div class="bemVindo" id="title-bv">
+
+                    <h2>BEM-VINDO AO <br> <span>NOSSO SITE </span> </h2>
+                    <p>Aqui você vai encontrar alguns dos melhores produtos para divulgar seu comércio e aumentar
+                        suas
+                        vendas. Oferecemos um serviço de qualidade, com bom atendimento junto com uma ótima
+                        agilidade,
+                        não
+                        deixe de entrar em contato, faça seu orçamento grátis.</p>
+                </div>
+                <figure class="bemVindo">
+                    <img src="imagem/desenho_comp.png" alt="" style="width: 100%;">
+                </figure>
+
+            </div>
+        </div>
+
+        <div id="servicos" class="nov">
+            <!--<div id="promocaoSemana">
+                <h2>Promoção da Semana</h2>
+                <img src="imagem_cart_int/cartaoPromocao.png" alt="">
+
+            </div>-->
+            <div class="box-section ">
+
+                <div class="row row-cols-1 row-cols-md-2 ">
+                    <div class="col ">
+                        <a href="banner.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/banner.png" class="card-img-top" alt="banner">
+                                <div class="card-body">
+                                    <h5 class="card-title">Banner e Lona</h5>
+                                    <p class="card-text"> Quando bem pensados os banners impactam o cliente logo na
+                                        primeira
+                                        e
+                                        permitem dar visibilidade a marca de forma simples, mas com grande potencial
+                                        de
+                                        venda.
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="panfletos.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/panfletos.png" class="card-img-top" alt="panfleto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Panfleto</h5>
+                                    <p class="card-text">Como uma ferramenta de marketing direto, o panfleto pode
+                                        incluir
+                                        todas
+                                        as
+                                        informações e pontos de venda que uma empresa deseje comunicar aos clientes.
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="cartoes_visitas.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/cartao_visitaVernizLocal.png" class="card-img-top"
+                                    alt="cartão de visita ">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Cartão de Visitas</h5>
+
+                                    <p class="card-text">O cartão de visita reflete a identidade e a imagem
+                                        corporativa
+                                        da
+                                        empresa,
+                                        razão pela qual é considerado como uma ferramenta de grande valia para o
+                                        profissional.
+
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="imagem/tags.png" class="card-img-top" alt="tags">
+                            <div class="card-body">
+                                <h5 class="card-title">Tags</h5>
+                                <p class="card-text">A sua finalidade pode ir bem mais além de apenas informar.
+                                    Quando
+                                    usadas
+                                    para impactar o cliente, agregam muito mais valor à marca e trazem benefícios ao
+                                    negócio.
+                                </p>
+                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;margin-top: 30px;">+
+                                    Saiba
+                                    mais
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_foto_servico nov">
+
+            <div class="box-foto">
+
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/aloha.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/ari.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/manos.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/mario.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/adesivo_vidro.jpeg');">
+                    <figcaption>Adesivo vidro</figcaption>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div id="parceiros">
+            <h3>Parceiros:</h3>
+            <div style="display: flex; flex-wrap: wrap; text-align: center; width:60%;max-width: 800px; margin: auto;">
+                <div class="lojas" id="ninha">
+                    <a href="https://www.instagram.com/ninha_modas_regattieri/" target="_blank"> <img
+                            src="imagem/ninha_modas.png" alt="loja ninha moda">
+                        <div class="cont-parceiros">
+
+                            <p>27 99922-5805<br>27 99885-3073 <br>
+
+                                ninha_modas_regattieri
+                            </p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas " id="musaFitness">
+                    <a href="https://www.instagram.com/musafitnessbeach/" target="_blank"><img
+                            src="imagem/musaFitness.png" alt="intagram musa fitness">
+                        <div class="cont-parceiros">
+
+                            <p>
+                                27 99986-2566 <br>
+                                musafitnessbeach
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas" id="diego_designer">
+                    <img src="imagem/diego_nunes_designer.png" alt="">
+                    <div class="cont-parceiros">
+                        <p>
+                            27 99532-1787 <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="lojas " id="manosGame">
+                    <a href="#"><img src="imagem/logo_manos.png" alt="">
+                        <div class="cont-parceiros">
+
+                            <p>27 99857-1629 <br> 3076-2054</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas " id="multivix">
+                    <a href="https://www.instagram.com/eadmultivix_viana/" target="_blank">
+                        <div class="cont-parceiros">
+
+                            <p>POLO VIANA <br><br> 27 99995-6070
+                                <br>eadmultivix_viana
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <footer class="text-center">
+            <p> Diego Nunes Santos
+                <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                    27 99532-1787 / 99645-8627
+                </a>
+            </p>
+        </footer>
+    </section>
+
+
+
+</body>
+<script src="grafica.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

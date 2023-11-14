@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/icon-dn.png" type="image/x-icon">
+    <title>Banner</title>
+</head>
+
+
+<body onload="tela(),calcularValorBanner(0),calcularValorBanner(1),calcularValorBanner(2)">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="adesivos.html">Adesivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartoes_visitas.html">Cartões de Visitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="panfletos.html">Panfletos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="banner.html">Banners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="windbanner.html">Wind Banners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imas.html">Imãs de Geladeira</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="cabecalho">
+        <div class="logo">
+
+            <img src="imagem/logo_grafica_b.png" alt="">
+
+
+
+        </div>
+
+        </div>
+        <div id="cab-contato" class="logo">
+            <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank"><img src="imagem/icon-zao.png"
+                    alt="telefone de contato">
+                <p>27 99645-8627 / 99532-1787</p>
+            </a>
+            <div class="sublinhado">
+
+            </div>
+        </div>
+    </header>
+    <!--==========================================================================id="contato-zap"======================-->
+
+    <section id="fotoMarketing">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/panfletos_marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/panfletos_marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/grafica_marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/grafica_marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px )" srcset="imagem/dev_marketing-peq.jpg" type="image/jpg">
+                        <img src="imagem/dev_marketing.jpg" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section style="text-align:center" id="banner">
+            <div id="zap-verde" ><div id="botFechar" onclick="closedForm()">X</div>
+                    <form  method="get" onsubmit="abrirWhatsapp()" >
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                        <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar dados p/ Whatsapp</span>
+                      </form>
+                   
+                </div>
+                <div class="zap-verde" onclick="formulario()" >
+                    <img src="imagem/logo-zap-verde.png" alt="orçamento">
+                </div>
+            <div class="box-section">
+
+                <div class="box-card">
+                    <img src="imagem/banner.png" class="card-img-top" alt="...">
+                    <h3>Banners e Lonas </h3>
+                    <table id="tab-banner" class="table table-striped">
+                        <tr>
+                            <td>TAMANHO </td>
+                            <td >VALOR</td>
+                        </tr>
+                        <tr>
+                            <td>90x70</td>
+                            <td id="preco0" >R$65,00</td>
+                        </tr>
+                        <tr>
+                            <td>120x70</td>
+                            <td id="preco1" >R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>150x80</td>
+                            <td id="preco2" >R$110,00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="semana"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="box-ext-banner">
+
+                    <div class="acab-banner">
+                        <div id="acab-banner-box1">
+                            <p style="margin:0 auto">Acabamentos para banner</p>
+
+                        </div>
+                        <div id="fundo_lonas">
+                            <div class="coll-aca-b">
+                                <img src="imagem/lona_ilhos.png" alt="">
+                                <p>Ilhós</p>
+                            </div>
+                            <div class="coll-aca-b">
+                                <img src="imagem/lona_bastao_faixa.png" alt="">
+                                <p>Bastão (faixa)</p>
+                            </div>
+                            <div class="coll-aca-b">
+                                <img src="imagem/lona_bastao_banner.png" alt="">
+                                <p>Bastão (banner)</p>
+                            </div>
+                        </div>
+                        <div id="atencao_banner" class="coll-aca-b">
+                            <p style="background-color: red;">ATENÇÃO</p>
+                            <div>
+                                <img src="imagem/caution-152926_960_720.webp" alt="atenção">
+                                <p>Todo o pedido de banner deve ser feito com antecendência para evitar transtornos com
+                                    as
+                                    datas de entregas!</p>
+                                    
+                        
+                            </div>
+                            <div >
+                                <p id="data">
+                           
+                                </p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section>
+            <footer class="text-center">
+                <p> Diego Nunes Santos
+                    <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                        27 99532-1787 / 99645-8627
+                    </a>
+                </p>
+            </footer>
+        </section>
+        
+</body>
+<script src="grafica.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

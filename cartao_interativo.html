@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta property="og:image" content="imagem_cart_int/logotipo.png">
+    <title>Cartão Interativo</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+    * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    section {
+        background-image: url('imagem_cart_int/background-paisagem.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 50% 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    #corpo {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .foto_perfil {
+        margin: 20px auto 0 auto;
+        display: flex;
+    }
+
+    .foto_perfil img {
+        margin: auto;
+        width: 55%;
+    }
+
+    .box_icones {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        width: 450px;
+
+    }
+
+    .icones {
+        width: 40px;
+        height: 40px;
+        margin: 10px auto;
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .icones img {
+        margin: auto;
+        height: 60%;
+
+    }
+
+    .icones a {
+        margin: auto;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .dev {
+        width: 100%;
+        display: flex;
+        margin: 30px 0;
+    }
+
+    .dev img {
+        width: 40%;
+        margin: auto;
+    }
+
+    table {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    table img {
+        height: 50px;
+
+    }
+
+    table td {
+        flex-wrap: wrap;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 0;
+        font-weight: 300;
+    }
+
+
+    p {
+        font-family: 'Oxygen', sans-serif;
+        color: #fff;
+        text-shadow: #333 0 0 3px;
+    }
+</style>
+
+<body>
+    <section>
+        <div id="corpo">
+
+
+            <div class="foto_perfil">
+                <img src="imagem_cart_int/logotipo.png" alt="">
+            </div>
+            <div style="display: flex; width: 70%; margin: auto;">
+
+                <div class="icones">
+                    <a href="https://www.instagram.com/dns_developer/" target="_blank">
+
+                        <img src="imagem_cart_int/insta.png" alt="">
+                    </a>
+                </div>
+                <div class="icones">
+                    <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                        <img src="imagem_cart_int/zap.png" alt="">
+                    </a>
+                </div>
+                <div class="icones">
+                    <a href="tel:+5527995321787">
+                        <img src="imagem_cart_int/liga.png" alt="">
+                    </a>
+                </div>
+                <div class="icones">
+                    <a href="https://ddiegosantos.github.io/grafica_dns" target="_blank">
+                        <img src="imagem_cart_int/site.png" alt="">
+
+                    </a>
+                </div>
+                <div class="icones">
+                    <a href="https://maps.app.goo.gl/cG2XC99Siah3aPHj7" target="_blank">
+
+                        <img src="imagem_cart_int/locali.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="box_icones">
+                <p>clique nos icones</p>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/adesivos.html" target="_blank">
+                                <img src="imagem_cart_int/adesivos.png" alt="">
+                            </a>
+                            <p>
+                                ADESIVOS
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/banner.html" target="_blank">
+                                <img src="imagem_cart_int/banners.png" alt="">
+                            </a>
+                            <p>
+                                BANNERS
+                            </p>
+                        </td>
+                        <td onclick="alert('[DESCULPE] Página ainda em desenvolvimento')">
+                            <a href="#" >
+                                <img src="imagem_cart_int/blocos.png" alt="">
+                            </a>
+                            <P>blocos</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/cartoes_visitas.html" target="_blank">
+                                <img src="imagem_cart_int/cartão.png" alt="">
+                            </a>
+                            <p>cartão de visitas</p>
+                        </td>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/calendario.html" target="_blank">
+                                <img src="imagem_cart_int/calendario.png" alt="">
+                            </a>
+                            <p>calendários</p>
+                        </td>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/imas.html" target="_blank">
+                                <img src="imagem_cart_int/ima.png" alt="">
+                            </a>
+                            <p>imãs de geladeira</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/panfletos.html" target="_blank">
+                                <img src="imagem_cart_int/panfleto.png" alt="">
+                            </a>
+                            <p>panfletos</p>
+                        </td>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/tags.html" target="_blank">
+                                <img src="imagem_cart_int/tag.png" alt="">
+                            </a>
+                            <p>Tags</p>
+                        </td>
+                        <td>
+                            <a href="https://ddiegosantos.github.io/grafica_dns/windbanner.html" target="_blank">
+                                <img src="imagem_cart_int/wind.png" alt="">
+                            </a>
+                            <p>wind banners</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="dev">
+                <img src="imagem_cart_int/diego.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
